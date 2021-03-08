@@ -15,6 +15,7 @@
 		0BAE6E7C25F6E8B7009412EA /* Coffee_orderingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAE6E7B25F6E8B7009412EA /* Coffee_orderingTests.swift */; };
 		0BAE6E8725F6E8B7009412EA /* Coffee_orderingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAE6E8625F6E8B7009412EA /* Coffee_orderingUITests.swift */; };
 		0BAE6E9F25F6EAA4009412EA /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAE6E9E25F6EAA4009412EA /* OrdersTableViewController.swift */; };
+		0BAE6EA425F6EB0D009412EA /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAE6EA325F6EB0D009412EA /* AddOrderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0BAE6E8625F6E8B7009412EA /* Coffee_orderingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_orderingUITests.swift; sourceTree = "<group>"; };
 		0BAE6E8825F6E8B7009412EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BAE6E9E25F6EAA4009412EA /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		0BAE6EA325F6EB0D009412EA /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				0BAE6E9E25F6EAA4009412EA /* OrdersTableViewController.swift */,
+				0BAE6EA325F6EB0D009412EA /* AddOrderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				0BAE6E6525F6E8B6009412EA /* AppDelegate.swift in Sources */,
 				0BAE6E6725F6E8B6009412EA /* SceneDelegate.swift in Sources */,
 				0BAE6E9F25F6EAA4009412EA /* OrdersTableViewController.swift in Sources */,
+				0BAE6EA425F6EB0D009412EA /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
