@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0BAE6E6525F6E8B6009412EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAE6E6425F6E8B6009412EA /* AppDelegate.swift */; };
 		0BAE6E6725F6E8B6009412EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAE6E6625F6E8B6009412EA /* SceneDelegate.swift */; };
-		0BAE6E6925F6E8B6009412EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAE6E6825F6E8B6009412EA /* ViewController.swift */; };
 		0BAE6E6C25F6E8B6009412EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BAE6E6A25F6E8B6009412EA /* Main.storyboard */; };
 		0BAE6E6E25F6E8B7009412EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BAE6E6D25F6E8B7009412EA /* Assets.xcassets */; };
 		0BAE6E7125F6E8B7009412EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BAE6E6F25F6E8B7009412EA /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 		0BAE6E6125F6E8B6009412EA /* Coffee ordering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee ordering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BAE6E6425F6E8B6009412EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BAE6E6625F6E8B6009412EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0BAE6E6825F6E8B6009412EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0BAE6E6B25F6E8B6009412EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BAE6E6D25F6E8B7009412EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BAE6E7025F6E8B7009412EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,9 +97,9 @@
 		0BAE6E6325F6E8B6009412EA /* Coffee ordering */ = {
 			isa = PBXGroup;
 			children = (
+				0BAE6E9A25F6E961009412EA /* Controllers */,
 				0BAE6E6425F6E8B6009412EA /* AppDelegate.swift */,
 				0BAE6E6625F6E8B6009412EA /* SceneDelegate.swift */,
-				0BAE6E6825F6E8B6009412EA /* ViewController.swift */,
 				0BAE6E6A25F6E8B6009412EA /* Main.storyboard */,
 				0BAE6E6D25F6E8B7009412EA /* Assets.xcassets */,
 				0BAE6E6F25F6E8B7009412EA /* LaunchScreen.storyboard */,
@@ -126,6 +124,13 @@
 				0BAE6E8825F6E8B7009412EA /* Info.plist */,
 			);
 			path = "Coffee orderingUITests";
+			sourceTree = "<group>";
+		};
+		0BAE6E9A25F6E961009412EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BAE6E6925F6E8B6009412EA /* ViewController.swift in Sources */,
 				0BAE6E6525F6E8B6009412EA /* AppDelegate.swift in Sources */,
 				0BAE6E6725F6E8B6009412EA /* SceneDelegate.swift in Sources */,
 			);
