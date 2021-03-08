@@ -11,7 +11,7 @@
         <!--Orders-->
         <scene sceneID="EGU-tD-Ydh">
             <objects>
-                <tableViewController id="LKk-NY-kKs" sceneMemberID="viewController">
+                <tableViewController id="LKk-NY-kKs" customClass="OrdersTableViewController" customModule="Coffee_ordering" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fud-yj-aC5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,14 +46,65 @@
         <!--Add new order-->
         <scene sceneID="Y0T-Wv-FkM">
             <objects>
-                <viewController id="oPc-JU-EAj" sceneMemberID="viewController">
+                <viewController id="oPc-JU-EAj" customClass="AddOrderViewController" customModule="Coffee_ordering" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QsW-3G-Z9d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ugw-lO-NKW">
+                                <rect key="frame" x="0.0" y="56" width="414" height="421"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Vki-FG-FnA">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vki-FG-FnA" id="euH-eH-EAd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xjN-2H-juH">
+                                <rect key="frame" x="104" y="485" width="206" height="32"/>
+                                <segments>
+                                    <segment title="Small"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Large"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lli-Cy-jhv">
+                                <rect key="frame" x="20" y="556" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xfw-Zm-CGp">
+                                <rect key="frame" x="20" y="610" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xr8-MF-AKk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ugw-lO-NKW" firstAttribute="height" secondItem="QsW-3G-Z9d" secondAttribute="height" multiplier="0.5" id="Cmx-0I-ySI"/>
+                            <constraint firstItem="Xfw-Zm-CGp" firstAttribute="leading" secondItem="xr8-MF-AKk" secondAttribute="leading" constant="20" id="EHE-lu-Gsx"/>
+                            <constraint firstItem="xr8-MF-AKk" firstAttribute="trailing" secondItem="Ugw-lO-NKW" secondAttribute="trailing" id="WD5-ux-CQw"/>
+                            <constraint firstItem="Ugw-lO-NKW" firstAttribute="top" secondItem="xr8-MF-AKk" secondAttribute="top" id="aEM-FX-JLw"/>
+                            <constraint firstItem="xjN-2H-juH" firstAttribute="centerX" secondItem="QsW-3G-Z9d" secondAttribute="centerX" id="dXX-AQ-866"/>
+                            <constraint firstItem="xr8-MF-AKk" firstAttribute="trailing" secondItem="Xfw-Zm-CGp" secondAttribute="trailing" constant="20" id="fK6-Tq-wFV"/>
+                            <constraint firstItem="Ugw-lO-NKW" firstAttribute="leading" secondItem="xr8-MF-AKk" secondAttribute="leading" id="ggq-bE-eIG"/>
+                            <constraint firstItem="Xfw-Zm-CGp" firstAttribute="top" secondItem="lli-Cy-jhv" secondAttribute="bottom" constant="20" id="hXX-Bq-gd2"/>
+                            <constraint firstItem="lli-Cy-jhv" firstAttribute="top" secondItem="xjN-2H-juH" secondAttribute="bottom" constant="40" id="rON-VU-FR3"/>
+                            <constraint firstItem="xr8-MF-AKk" firstAttribute="trailing" secondItem="lli-Cy-jhv" secondAttribute="trailing" constant="20" id="rlD-P7-JWk"/>
+                            <constraint firstItem="xjN-2H-juH" firstAttribute="top" secondItem="Ugw-lO-NKW" secondAttribute="bottom" constant="8" symbolic="YES" id="uRt-ek-147"/>
+                            <constraint firstItem="lli-Cy-jhv" firstAttribute="leading" secondItem="xr8-MF-AKk" secondAttribute="leading" constant="20" id="z2s-7p-HC0"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add new order" id="9qF-yX-KEX"/>
+                    <navigationItem key="navigationItem" title="Add new order" id="9qF-yX-KEX">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="0b9-Hd-aNX"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="qfR-PO-nm5"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mg5-NL-adU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
